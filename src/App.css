@@ -1,42 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar a:hover {
+  color: silver;
+}
+
+.searchContainer {
+  padding: 1rem;
+}
+
+.statsSection {
+  margin-top: 10px;
+  background: lightgray;
+  border-radius: 5px;
+}
+
+.container-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  opacity: 90%;
+  padding-top: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.card-stats {
+  margin: 0 10px;
+}
+
+.card .statsBase {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.card .statsStr {
+  margin: 0;
+  color: orangered;
+}
+
+.card .statsAgi {
+  margin: 0;
+  color: lawngreen;
+}
+
+.card .statsInt {
+  margin: 0;
+  color: cyan;
+}
+
+button {
+  margin: 0 10px;
+}
+
+.home-container {
+  padding: 3.5rem;
+  margin: 3rem;
   text-align: center;
+  background-image: url(./assets/imgs/dota2-wallpaper.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text-area {
+  background-color: rgba(228, 228, 228, 0.3);
+  border-radius: 5px;
+  padding: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-container h1 {
+  color: black;
+  font-size: 300%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.home-container h2 {
+  color: white;
+  font-size: 150%;
 }
 
-.card {
-  padding: 2em;
+.guides-container{
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-image: url(./assets/imgs/dota2-wallpaper.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.read-the-docs {
-  color: #888;
+.guides-container h1 {
+  color: silver;
+}
+
+form {
+  font-weight: bolder;
+}
+
+footer {
+  position:relative;
+  left:0px;
+  bottom:0px;
+  width:100%;
+}
+
+.error-container {
+  padding: 8rem;
+  margin: 2.5rem;
+  text-align: center;
+  font-size: 150%;
 }
