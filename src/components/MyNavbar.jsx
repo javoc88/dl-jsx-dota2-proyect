@@ -6,16 +6,22 @@ import { Link } from "react-router-dom";
 function MyNavbar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" className="navbar bg-body-tertiary">
+      <Navbar
+        bg="dark"
+        data-bs-theme="dark"
+        className="navbar bg-body-tertiary"
+      >
         <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="src/assets/imgs/dota2-logo.png"
-              width="140"
-              height="30"
-              className="d-inline-block align-top"
-            />{" "}
+          <Navbar.Brand>
+            <Link to="/home">
+              <img
+                alt=""
+                src="src/assets/imgs/dota2-logo.png"
+                width="140"
+                height="30"
+                className="d-inline-block align-top"
+              />{" "}
+            </Link>
           </Navbar.Brand>
           <Nav className="justify-content-end">
             <Nav.Link>
